@@ -26,6 +26,9 @@ gdjs.Endless_32RunnerCode.GDInvincibleObjects3= [];
 gdjs.Endless_32RunnerCode.GDinvicibilityObjects1= [];
 gdjs.Endless_32RunnerCode.GDinvicibilityObjects2= [];
 gdjs.Endless_32RunnerCode.GDinvicibilityObjects3= [];
+gdjs.Endless_32RunnerCode.GDBackgroundObjects1= [];
+gdjs.Endless_32RunnerCode.GDBackgroundObjects2= [];
+gdjs.Endless_32RunnerCode.GDBackgroundObjects3= [];
 
 gdjs.Endless_32RunnerCode.conditionTrue_0 = {val:false};
 gdjs.Endless_32RunnerCode.condition0IsTrue_0 = {val:false};
@@ -39,7 +42,7 @@ gdjs.Endless_32RunnerCode.condition2IsTrue_1 = {val:false};
 gdjs.Endless_32RunnerCode.condition3IsTrue_1 = {val:false};
 
 
-gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDInvincibleObjects1Objects = Hashtable.newFrom({"Invincible": gdjs.Endless_32RunnerCode.GDInvincibleObjects1});gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDInvincibleObjects1Objects = Hashtable.newFrom({"Invincible": gdjs.Endless_32RunnerCode.GDInvincibleObjects1});gdjs.Endless_32RunnerCode.eventsList0 = function(runtimeScene) {
+gdjs.Endless_32RunnerCode.eventsList0 = function(runtimeScene) {
 
 {
 
@@ -48,15 +51,7 @@ gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
 {
 gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene);
 }if (gdjs.Endless_32RunnerCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Invincible"), gdjs.Endless_32RunnerCode.GDInvincibleObjects1);
-gdjs.copyArray(runtimeScene.getObjects("invicibility"), gdjs.Endless_32RunnerCode.GDinvicibilityObjects1);
 {runtimeScene.getVariables().get("state").setNumber(1);
-}{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i].hide();
-}
-}{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDinvicibilityObjects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDinvicibilityObjects1[i].hide();
-}
 }}
 
 }
@@ -78,7 +73,7 @@ gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVaria
 }if ( gdjs.Endless_32RunnerCode.condition1IsTrue_0.val ) {
 {
 {gdjs.Endless_32RunnerCode.conditionTrue_1 = gdjs.Endless_32RunnerCode.condition2IsTrue_0;
-gdjs.Endless_32RunnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7638356);
+gdjs.Endless_32RunnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7263716);
 }
 }}
 }
@@ -87,7 +82,7 @@ gdjs.copyArray(gdjs.Endless_32RunnerCode.GDAsteroidObjects1, gdjs.Endless_32Runn
 
 {gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDAsteroidObjects2Objects, gdjs.random(800), -(5), "3");
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "Enemy");
-}{runtimeScene.getVariables().get("speed").add(2);
+}{runtimeScene.getVariables().get("speed").add(10);
 }}
 
 }
@@ -180,7 +175,7 @@ gdjs.copyArray(runtimeScene.getObjects("GroundLayer"), gdjs.Endless_32RunnerCode
 }
 
 
-};gdjs.Endless_32RunnerCode.eventsList3 = function(runtimeScene) {
+};gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDInvincibleObjects1Objects = Hashtable.newFrom({"Invincible": gdjs.Endless_32RunnerCode.GDInvincibleObjects1});gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDInvincibleObjects1Objects = Hashtable.newFrom({"Invincible": gdjs.Endless_32RunnerCode.GDInvincibleObjects1});gdjs.Endless_32RunnerCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -193,72 +188,6 @@ gdjs.copyArray(runtimeScene.getObjects("GameOver"), gdjs.Endless_32RunnerCode.GD
 {runtimeScene.getVariables().get("state").setNumber(0);
 }{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDGameOverObjects1.length ;i < len;++i) {
     gdjs.Endless_32RunnerCode.GDGameOverObjects1[i].hide();
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Invincible"), gdjs.Endless_32RunnerCode.GDInvincibleObjects1);
-
-gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
-gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = false;
-gdjs.Endless_32RunnerCode.condition2IsTrue_0.val = false;
-{
-gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDInvincibleObjects1Objects, runtimeScene, true, false);
-}if ( gdjs.Endless_32RunnerCode.condition0IsTrue_0.val ) {
-{
-gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}if ( gdjs.Endless_32RunnerCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length;i<l;++i) {
-    if ( gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i].getAnimation() == 1 ) {
-        gdjs.Endless_32RunnerCode.condition2IsTrue_0.val = true;
-        gdjs.Endless_32RunnerCode.GDInvincibleObjects1[k] = gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i];
-        ++k;
-    }
-}
-gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length = k;}}
-}
-if (gdjs.Endless_32RunnerCode.condition2IsTrue_0.val) {
-/* Reuse gdjs.Endless_32RunnerCode.GDInvincibleObjects1 */
-{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i].setAnimation(0);
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Invincible"), gdjs.Endless_32RunnerCode.GDInvincibleObjects1);
-
-gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
-gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = false;
-gdjs.Endless_32RunnerCode.condition2IsTrue_0.val = false;
-{
-gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDInvincibleObjects1Objects, runtimeScene, true, false);
-}if ( gdjs.Endless_32RunnerCode.condition0IsTrue_0.val ) {
-{
-gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}if ( gdjs.Endless_32RunnerCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length;i<l;++i) {
-    if ( gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i].getAnimation() == 0 ) {
-        gdjs.Endless_32RunnerCode.condition2IsTrue_0.val = true;
-        gdjs.Endless_32RunnerCode.GDInvincibleObjects1[k] = gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i];
-        ++k;
-    }
-}
-gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length = k;}}
-}
-if (gdjs.Endless_32RunnerCode.condition2IsTrue_0.val) {
-/* Reuse gdjs.Endless_32RunnerCode.GDInvincibleObjects1 */
-{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i].setAnimation(1);
 }
 }}
 
@@ -294,8 +223,10 @@ gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVaria
 }if (gdjs.Endless_32RunnerCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Asteroid"), gdjs.Endless_32RunnerCode.GDAsteroidObjects1);
 gdjs.copyArray(runtimeScene.getObjects("GroundLayer"), gdjs.Endless_32RunnerCode.GDGroundLayerObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Invincible"), gdjs.Endless_32RunnerCode.GDInvincibleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("NewGame"), gdjs.Endless_32RunnerCode.GDNewGameObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.Endless_32RunnerCode.GDScoreObjects1);
+gdjs.copyArray(runtimeScene.getObjects("invicibility"), gdjs.Endless_32RunnerCode.GDinvicibilityObjects1);
 {for(var i = 0, len = gdjs.Endless_32RunnerCode.GDAsteroidObjects1.length ;i < len;++i) {
     gdjs.Endless_32RunnerCode.GDAsteroidObjects1[i].addPolarForce(90, gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("speed")), 0);
 }
@@ -307,6 +238,12 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.Endless_32RunnerCode.GDSco
 }
 }{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDNewGameObjects1.length ;i < len;++i) {
     gdjs.Endless_32RunnerCode.GDNewGameObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDinvicibilityObjects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDinvicibilityObjects1[i].hide();
 }
 }
 { //Subevents
@@ -362,6 +299,72 @@ gdjs.Endless_32RunnerCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Invincible"), gdjs.Endless_32RunnerCode.GDInvincibleObjects1);
+
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
+gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = false;
+gdjs.Endless_32RunnerCode.condition2IsTrue_0.val = false;
+{
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDInvincibleObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.Endless_32RunnerCode.condition0IsTrue_0.val ) {
+{
+gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}if ( gdjs.Endless_32RunnerCode.condition1IsTrue_0.val ) {
+{
+for(var i = 0, k = 0, l = gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length;i<l;++i) {
+    if ( gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i].getAnimation() == 0 ) {
+        gdjs.Endless_32RunnerCode.condition2IsTrue_0.val = true;
+        gdjs.Endless_32RunnerCode.GDInvincibleObjects1[k] = gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i];
+        ++k;
+    }
+}
+gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length = k;}}
+}
+if (gdjs.Endless_32RunnerCode.condition2IsTrue_0.val) {
+/* Reuse gdjs.Endless_32RunnerCode.GDInvincibleObjects1 */
+{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i].setAnimation(1);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Invincible"), gdjs.Endless_32RunnerCode.GDInvincibleObjects1);
+
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
+gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = false;
+gdjs.Endless_32RunnerCode.condition2IsTrue_0.val = false;
+{
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDInvincibleObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.Endless_32RunnerCode.condition0IsTrue_0.val ) {
+{
+gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}if ( gdjs.Endless_32RunnerCode.condition1IsTrue_0.val ) {
+{
+for(var i = 0, k = 0, l = gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length;i<l;++i) {
+    if ( gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i].getAnimation() == 1 ) {
+        gdjs.Endless_32RunnerCode.condition2IsTrue_0.val = true;
+        gdjs.Endless_32RunnerCode.GDInvincibleObjects1[k] = gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i];
+        ++k;
+    }
+}
+gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length = k;}}
+}
+if (gdjs.Endless_32RunnerCode.condition2IsTrue_0.val) {
+/* Reuse gdjs.Endless_32RunnerCode.GDInvincibleObjects1 */
+{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDInvincibleObjects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDInvincibleObjects1[i].setAnimation(0);
+}
+}}
+
+}
+
+
 };
 
 gdjs.Endless_32RunnerCode.func = function(runtimeScene) {
@@ -394,6 +397,9 @@ gdjs.Endless_32RunnerCode.GDInvincibleObjects3.length = 0;
 gdjs.Endless_32RunnerCode.GDinvicibilityObjects1.length = 0;
 gdjs.Endless_32RunnerCode.GDinvicibilityObjects2.length = 0;
 gdjs.Endless_32RunnerCode.GDinvicibilityObjects3.length = 0;
+gdjs.Endless_32RunnerCode.GDBackgroundObjects1.length = 0;
+gdjs.Endless_32RunnerCode.GDBackgroundObjects2.length = 0;
+gdjs.Endless_32RunnerCode.GDBackgroundObjects3.length = 0;
 
 gdjs.Endless_32RunnerCode.eventsList3(runtimeScene);
 return;
