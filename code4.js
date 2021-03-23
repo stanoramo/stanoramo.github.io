@@ -1,4 +1,6 @@
 gdjs.Game_32OverCode = {};
+gdjs.Game_32OverCode.GDTestValueObjects1= [];
+gdjs.Game_32OverCode.GDTestValueObjects2= [];
 gdjs.Game_32OverCode.GDBackgroundObjects1= [];
 gdjs.Game_32OverCode.GDBackgroundObjects2= [];
 gdjs.Game_32OverCode.GDGameOverObjects1= [];
@@ -115,6 +117,8 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.Game_32OverCode.GDScoreObj
 gdjs.Game_32OverCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.Game_32OverCode.GDTestValueObjects1.length = 0;
+gdjs.Game_32OverCode.GDTestValueObjects2.length = 0;
 gdjs.Game_32OverCode.GDBackgroundObjects1.length = 0;
 gdjs.Game_32OverCode.GDBackgroundObjects2.length = 0;
 gdjs.Game_32OverCode.GDGameOverObjects1.length = 0;

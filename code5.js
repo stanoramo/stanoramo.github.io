@@ -1,4 +1,7 @@
 gdjs.Endless_32RunnerCode = {};
+gdjs.Endless_32RunnerCode.GDTestValueObjects1= [];
+gdjs.Endless_32RunnerCode.GDTestValueObjects2= [];
+gdjs.Endless_32RunnerCode.GDTestValueObjects3= [];
 gdjs.Endless_32RunnerCode.GDBackgroundObjects1= [];
 gdjs.Endless_32RunnerCode.GDBackgroundObjects2= [];
 gdjs.Endless_32RunnerCode.GDBackgroundObjects3= [];
@@ -50,17 +53,15 @@ gdjs.Endless_32RunnerCode.GDCoinObjects3= [];
 gdjs.Endless_32RunnerCode.GDBlueLaserObjects1= [];
 gdjs.Endless_32RunnerCode.GDBlueLaserObjects2= [];
 gdjs.Endless_32RunnerCode.GDBlueLaserObjects3= [];
-gdjs.Endless_32RunnerCode.GDRedLaserObjects1= [];
-gdjs.Endless_32RunnerCode.GDRedLaserObjects2= [];
-gdjs.Endless_32RunnerCode.GDRedLaserObjects3= [];
-gdjs.Endless_32RunnerCode.GDTestValueObjects1= [];
-gdjs.Endless_32RunnerCode.GDTestValueObjects2= [];
-gdjs.Endless_32RunnerCode.GDTestValueObjects3= [];
 
 gdjs.Endless_32RunnerCode.conditionTrue_0 = {val:false};
 gdjs.Endless_32RunnerCode.condition0IsTrue_0 = {val:false};
 gdjs.Endless_32RunnerCode.condition1IsTrue_0 = {val:false};
 gdjs.Endless_32RunnerCode.condition2IsTrue_0 = {val:false};
+gdjs.Endless_32RunnerCode.conditionTrue_1 = {val:false};
+gdjs.Endless_32RunnerCode.condition0IsTrue_1 = {val:false};
+gdjs.Endless_32RunnerCode.condition1IsTrue_1 = {val:false};
+gdjs.Endless_32RunnerCode.condition2IsTrue_1 = {val:false};
 
 
 gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDPauseObjects1Objects = Hashtable.newFrom({"Pause": gdjs.Endless_32RunnerCode.GDPauseObjects1});gdjs.Endless_32RunnerCode.eventsList0 = function(runtimeScene) {
@@ -178,13 +179,18 @@ gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
 gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.Endless_32RunnerCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Background"), gdjs.Endless_32RunnerCode.GDBackgroundObjects1);
+gdjs.copyArray(runtimeScene.getObjects("TestValue"), gdjs.Endless_32RunnerCode.GDTestValueObjects1);
 {for(var i = 0, len = gdjs.Endless_32RunnerCode.GDBackgroundObjects1.length ;i < len;++i) {
     gdjs.Endless_32RunnerCode.GDBackgroundObjects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDBackgroundObjects1[i].getVariables().get("Speed")).setNumber(200);
 }
 }{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDBackgroundObjects1.length ;i < len;++i) {
     gdjs.Endless_32RunnerCode.GDBackgroundObjects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDBackgroundObjects1[i].getVariables().get("SpawnSpeed")).setNumber(0.3);
 }
-}{runtimeScene.getVariables().get("LazerDamage").setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LazerDamage")));
+}{runtimeScene.getVariables().get("LaserDamage").setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LaserDamage")));
+}{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDTestValueObjects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].hide();
+}
+}{runtimeScene.getVariables().get("Flag").setNumber(1);
 }}
 
 }
@@ -403,6 +409,24 @@ for(var i = 0, len = gdjs.Endless_32RunnerCode.GDCrystal3Objects1.length ;i < le
 for(var i = 0, len = gdjs.Endless_32RunnerCode.GDCrystal2Objects1.length ;i < len;++i) {
     gdjs.Endless_32RunnerCode.GDCrystal2Objects1[i].addForce(0, (gdjs.RuntimeObject.getVariableNumber(((gdjs.Endless_32RunnerCode.GDBackgroundObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.Endless_32RunnerCode.GDBackgroundObjects1[0].getVariables()).get("Speed"))), 0);
 }
+}{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor1Objects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDMeteor1Objects1[i].rotate(gdjs.random(60), runtimeScene);
+}
+for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor2Objects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDMeteor2Objects1[i].rotate(gdjs.random(60), runtimeScene);
+}
+for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor3Objects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDMeteor3Objects1[i].rotate(gdjs.random(60), runtimeScene);
+}
+for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor4Objects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDMeteor4Objects1[i].rotate(gdjs.random(60), runtimeScene);
+}
+for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor5Objects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDMeteor5Objects1[i].rotate(gdjs.random(60), runtimeScene);
+}
+for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor6Objects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDMeteor6Objects1[i].rotate(gdjs.random(60), runtimeScene);
+}
 }}
 
 }
@@ -424,10 +448,10 @@ gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = false;
 gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 10, "IncreaseHealth");
 }if ( gdjs.Endless_32RunnerCode.condition0IsTrue_0.val ) {
 {
-gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LazerDamage")) > 120;
+gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LaserDamage")) > 120;
 }}
 if (gdjs.Endless_32RunnerCode.condition1IsTrue_0.val) {
-{runtimeScene.getVariables().get("LazerDamage").sub(10);
+{runtimeScene.getVariables().get("LaserDamage").sub(10);
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "IncreaseHealth");
 }}
 
@@ -545,6 +569,7 @@ gdjs.copyArray(runtimeScene.getObjects("Rocket"), gdjs.Endless_32RunnerCode.GDRo
 gdjs.Endless_32RunnerCode.GDBlueLaserObjects1.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDBlueLaserObjects1Objects, (( gdjs.Endless_32RunnerCode.GDRocketObjects1.length === 0 ) ? 0 :gdjs.Endless_32RunnerCode.GDRocketObjects1[0].getPointX("Gun")), (( gdjs.Endless_32RunnerCode.GDRocketObjects1.length === 0 ) ? 0 :gdjs.Endless_32RunnerCode.GDRocketObjects1[0].getPointY("Gun")), "");
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Laser sound.wav", false, 5, 1);
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "FireRate");
 }}
 
@@ -557,7 +582,7 @@ gdjs.Endless_32RunnerCode.GDBlueLaserObjects1.length = 0;
 {
 gdjs.copyArray(runtimeScene.getObjects("BlueLaser"), gdjs.Endless_32RunnerCode.GDBlueLaserObjects1);
 {for(var i = 0, len = gdjs.Endless_32RunnerCode.GDBlueLaserObjects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDBlueLaserObjects1[i].addPolarForce(270, gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LazerSpeed")), 0);
+    gdjs.Endless_32RunnerCode.GDBlueLaserObjects1[i].addPolarForce(270, gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LaserSpeed")), 0);
 }
 }}
 
@@ -586,22 +611,22 @@ gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxes
 /* Reuse gdjs.Endless_32RunnerCode.GDMeteor5Objects1 */
 /* Reuse gdjs.Endless_32RunnerCode.GDMeteor6Objects1 */
 {for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor1Objects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDMeteor1Objects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDMeteor1Objects1[i].getVariables().get("Health")).sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LazerDamage")));
+    gdjs.Endless_32RunnerCode.GDMeteor1Objects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDMeteor1Objects1[i].getVariables().get("Health")).sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LaserDamage")));
 }
 for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor2Objects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDMeteor2Objects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDMeteor2Objects1[i].getVariables().get("Health")).sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LazerDamage")));
+    gdjs.Endless_32RunnerCode.GDMeteor2Objects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDMeteor2Objects1[i].getVariables().get("Health")).sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LaserDamage")));
 }
 for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor3Objects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDMeteor3Objects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDMeteor3Objects1[i].getVariables().get("Health")).sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LazerDamage")));
+    gdjs.Endless_32RunnerCode.GDMeteor3Objects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDMeteor3Objects1[i].getVariables().get("Health")).sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LaserDamage")));
 }
 for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor4Objects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDMeteor4Objects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDMeteor4Objects1[i].getVariables().get("Health")).sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LazerDamage")));
+    gdjs.Endless_32RunnerCode.GDMeteor4Objects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDMeteor4Objects1[i].getVariables().get("Health")).sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LaserDamage")));
 }
 for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor5Objects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDMeteor5Objects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDMeteor5Objects1[i].getVariables().get("Health")).sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LazerDamage")));
+    gdjs.Endless_32RunnerCode.GDMeteor5Objects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDMeteor5Objects1[i].getVariables().get("Health")).sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LaserDamage")));
 }
 for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor6Objects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDMeteor6Objects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDMeteor6Objects1[i].getVariables().get("Health")).sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LazerDamage")));
+    gdjs.Endless_32RunnerCode.GDMeteor6Objects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDMeteor6Objects1[i].getVariables().get("Health")).sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LaserDamage")));
 }
 }{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDBlueLaserObjects1.length ;i < len;++i) {
     gdjs.Endless_32RunnerCode.GDBlueLaserObjects1[i].deleteFromScene(runtimeScene);
@@ -701,11 +726,69 @@ for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor6Objects1.length ;i < len
 }
 
 
+{
+
+
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
+gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = false;
+{
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "k");
+}if ( gdjs.Endless_32RunnerCode.condition0IsTrue_0.val ) {
+{
+{gdjs.Endless_32RunnerCode.conditionTrue_1 = gdjs.Endless_32RunnerCode.condition1IsTrue_0;
+gdjs.Endless_32RunnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9676060);
+}
+}}
+if (gdjs.Endless_32RunnerCode.condition1IsTrue_0.val) {
+{runtimeScene.getVariables().get("Flag").mul(-(1));
+}}
+
+}
+
+
+{
+
+
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
+{
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("Flag")) == -(1);
+}if (gdjs.Endless_32RunnerCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("TestValue"), gdjs.Endless_32RunnerCode.GDTestValueObjects1);
+{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDTestValueObjects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDTestValueObjects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].setString("FireRate: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("FireRate")) + " LaserSpeed: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LaserSpeed")) + " LaserDamage: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LaserDamage")) + " CoinMultiplier: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("CoinMultiplier")) + " Invincible: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("Invincible")) + " InfMoney: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("InfMoney")));
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
+{
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("Flag")) == 1;
+}if (gdjs.Endless_32RunnerCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("TestValue"), gdjs.Endless_32RunnerCode.GDTestValueObjects1);
+{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDTestValueObjects1.length ;i < len;++i) {
+    gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].hide();
+}
+}}
+
+}
+
+
 };
 
 gdjs.Endless_32RunnerCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.Endless_32RunnerCode.GDTestValueObjects1.length = 0;
+gdjs.Endless_32RunnerCode.GDTestValueObjects2.length = 0;
+gdjs.Endless_32RunnerCode.GDTestValueObjects3.length = 0;
 gdjs.Endless_32RunnerCode.GDBackgroundObjects1.length = 0;
 gdjs.Endless_32RunnerCode.GDBackgroundObjects2.length = 0;
 gdjs.Endless_32RunnerCode.GDBackgroundObjects3.length = 0;
@@ -757,12 +840,6 @@ gdjs.Endless_32RunnerCode.GDCoinObjects3.length = 0;
 gdjs.Endless_32RunnerCode.GDBlueLaserObjects1.length = 0;
 gdjs.Endless_32RunnerCode.GDBlueLaserObjects2.length = 0;
 gdjs.Endless_32RunnerCode.GDBlueLaserObjects3.length = 0;
-gdjs.Endless_32RunnerCode.GDRedLaserObjects1.length = 0;
-gdjs.Endless_32RunnerCode.GDRedLaserObjects2.length = 0;
-gdjs.Endless_32RunnerCode.GDRedLaserObjects3.length = 0;
-gdjs.Endless_32RunnerCode.GDTestValueObjects1.length = 0;
-gdjs.Endless_32RunnerCode.GDTestValueObjects2.length = 0;
-gdjs.Endless_32RunnerCode.GDTestValueObjects3.length = 0;
 
 gdjs.Endless_32RunnerCode.eventsList4(runtimeScene);
 return;

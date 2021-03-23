@@ -1,4 +1,6 @@
 gdjs.Developer_32ToolsCode = {};
+gdjs.Developer_32ToolsCode.GDTestValueObjects1= [];
+gdjs.Developer_32ToolsCode.GDTestValueObjects2= [];
 gdjs.Developer_32ToolsCode.GDBackgroundObjects1= [];
 gdjs.Developer_32ToolsCode.GDBackgroundObjects2= [];
 gdjs.Developer_32ToolsCode.GDBackObjects1= [];
@@ -9,8 +11,6 @@ gdjs.Developer_32ToolsCode.GDInvincibleObjects1= [];
 gdjs.Developer_32ToolsCode.GDInvincibleObjects2= [];
 gdjs.Developer_32ToolsCode.GDCheckBox2Objects1= [];
 gdjs.Developer_32ToolsCode.GDCheckBox2Objects2= [];
-gdjs.Developer_32ToolsCode.GDCheckBox3Objects1= [];
-gdjs.Developer_32ToolsCode.GDCheckBox3Objects2= [];
 gdjs.Developer_32ToolsCode.GDCheckBoxObjects1= [];
 gdjs.Developer_32ToolsCode.GDCheckBoxObjects2= [];
 
@@ -80,8 +80,8 @@ for(var i = 0, k = 0, l = gdjs.Developer_32ToolsCode.GDCheckBoxObjects1.length;i
 gdjs.Developer_32ToolsCode.GDCheckBoxObjects1.length = k;}if (gdjs.Developer_32ToolsCode.condition0IsTrue_0.val) {
 /* Reuse gdjs.Developer_32ToolsCode.GDCheckBoxObjects1 */
 {runtimeScene.getGame().getVariables().get("InfMoney").setNumber(1);
-}{runtimeScene.getGame().getVariables().get("LazerDamageCost").setNumber(0);
-}{runtimeScene.getGame().getVariables().get("LazerSpeedCost").setNumber(0);
+}{runtimeScene.getGame().getVariables().get("LaserDamageCost").setNumber(0);
+}{runtimeScene.getGame().getVariables().get("LaserSpeedCost").setNumber(0);
 }{runtimeScene.getGame().getVariables().get("CoinMultiplierCost").setNumber(0);
 }{runtimeScene.getGame().getVariables().get("FireRateCost").setNumber(0);
 }{for(var i = 0, len = gdjs.Developer_32ToolsCode.GDCheckBoxObjects1.length ;i < len;++i) {
@@ -108,8 +108,8 @@ for(var i = 0, k = 0, l = gdjs.Developer_32ToolsCode.GDCheckBoxObjects1.length;i
 gdjs.Developer_32ToolsCode.GDCheckBoxObjects1.length = k;}if (gdjs.Developer_32ToolsCode.condition0IsTrue_0.val) {
 /* Reuse gdjs.Developer_32ToolsCode.GDCheckBoxObjects1 */
 {runtimeScene.getGame().getVariables().get("InfMoney").setNumber(0);
-}{runtimeScene.getGame().getVariables().get("LazerDamageCost").setNumber(10000);
-}{runtimeScene.getGame().getVariables().get("LazerSpeedCost").setNumber(10000);
+}{runtimeScene.getGame().getVariables().get("LaserDamageCost").setNumber(10000);
+}{runtimeScene.getGame().getVariables().get("LaserSpeedCost").setNumber(10000);
 }{runtimeScene.getGame().getVariables().get("CoinMultiplierCost").setNumber(10000);
 }{runtimeScene.getGame().getVariables().get("FireRateCost").setNumber(10000);
 }{for(var i = 0, len = gdjs.Developer_32ToolsCode.GDCheckBoxObjects1.length ;i < len;++i) {
@@ -211,6 +211,8 @@ if (gdjs.Developer_32ToolsCode.condition1IsTrue_0.val) {
 gdjs.Developer_32ToolsCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.Developer_32ToolsCode.GDTestValueObjects1.length = 0;
+gdjs.Developer_32ToolsCode.GDTestValueObjects2.length = 0;
 gdjs.Developer_32ToolsCode.GDBackgroundObjects1.length = 0;
 gdjs.Developer_32ToolsCode.GDBackgroundObjects2.length = 0;
 gdjs.Developer_32ToolsCode.GDBackObjects1.length = 0;
@@ -221,8 +223,6 @@ gdjs.Developer_32ToolsCode.GDInvincibleObjects1.length = 0;
 gdjs.Developer_32ToolsCode.GDInvincibleObjects2.length = 0;
 gdjs.Developer_32ToolsCode.GDCheckBox2Objects1.length = 0;
 gdjs.Developer_32ToolsCode.GDCheckBox2Objects2.length = 0;
-gdjs.Developer_32ToolsCode.GDCheckBox3Objects1.length = 0;
-gdjs.Developer_32ToolsCode.GDCheckBox3Objects2.length = 0;
 gdjs.Developer_32ToolsCode.GDCheckBoxObjects1.length = 0;
 gdjs.Developer_32ToolsCode.GDCheckBoxObjects2.length = 0;
 

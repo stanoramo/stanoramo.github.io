@@ -1,4 +1,6 @@
 gdjs.Initialisation_32PageCode = {};
+gdjs.Initialisation_32PageCode.GDTestValueObjects1= [];
+gdjs.Initialisation_32PageCode.GDTestValueObjects2= [];
 gdjs.Initialisation_32PageCode.GDBackgroundObjects1= [];
 gdjs.Initialisation_32PageCode.GDBackgroundObjects2= [];
 gdjs.Initialisation_32PageCode.GDHelpObjects1= [];
@@ -35,12 +37,12 @@ gdjs.Initialisation_32PageCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeSce
 }{runtimeScene.getGame().getVariables().get("CoinMultiplier").setNumber(1);
 }{runtimeScene.getGame().getVariables().get("CoinMultiplierCost").setNumber(10000);
 }{runtimeScene.getGame().getVariables().get("CoinMultiplierLevel").setNumber(1);
-}{runtimeScene.getGame().getVariables().get("LazerDamage").setNumber(100);
-}{runtimeScene.getGame().getVariables().get("LazerDamageCost").setNumber(10000);
-}{runtimeScene.getGame().getVariables().get("LazerDamageLevel").setNumber(1);
-}{runtimeScene.getGame().getVariables().get("LazerSpeed").setNumber(100);
-}{runtimeScene.getGame().getVariables().get("LazerSpeedCost").setNumber(10000);
-}{runtimeScene.getGame().getVariables().get("LazerSpeedLevel").setNumber(1);
+}{runtimeScene.getGame().getVariables().get("LaserDamage").setNumber(100);
+}{runtimeScene.getGame().getVariables().get("LaserDamageCost").setNumber(10000);
+}{runtimeScene.getGame().getVariables().get("LaserDamageLevel").setNumber(1);
+}{runtimeScene.getGame().getVariables().get("LaserSpeed").setNumber(100);
+}{runtimeScene.getGame().getVariables().get("LaserSpeedCost").setNumber(10000);
+}{runtimeScene.getGame().getVariables().get("LaserSpeedLevel").setNumber(1);
 }{runtimeScene.getGame().getVariables().get("Invincible").setNumber(0);
 }{runtimeScene.getGame().getVariables().get("InfMoney").setNumber(0);
 }{runtimeScene.getGame().getVariables().get("God").setNumber(0);
@@ -65,6 +67,8 @@ gdjs.Initialisation_32PageCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeSce
 gdjs.Initialisation_32PageCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.Initialisation_32PageCode.GDTestValueObjects1.length = 0;
+gdjs.Initialisation_32PageCode.GDTestValueObjects2.length = 0;
 gdjs.Initialisation_32PageCode.GDBackgroundObjects1.length = 0;
 gdjs.Initialisation_32PageCode.GDBackgroundObjects2.length = 0;
 gdjs.Initialisation_32PageCode.GDHelpObjects1.length = 0;

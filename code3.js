@@ -1,4 +1,6 @@
 gdjs.How_32To_32PlayCode = {};
+gdjs.How_32To_32PlayCode.GDTestValueObjects1= [];
+gdjs.How_32To_32PlayCode.GDTestValueObjects2= [];
 gdjs.How_32To_32PlayCode.GDBackgroundObjects1= [];
 gdjs.How_32To_32PlayCode.GDBackgroundObjects2= [];
 gdjs.How_32To_32PlayCode.GDHowTOObjects1= [];
@@ -48,6 +50,8 @@ if (gdjs.How_32To_32PlayCode.condition1IsTrue_0.val) {
 gdjs.How_32To_32PlayCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.How_32To_32PlayCode.GDTestValueObjects1.length = 0;
+gdjs.How_32To_32PlayCode.GDTestValueObjects2.length = 0;
 gdjs.How_32To_32PlayCode.GDBackgroundObjects1.length = 0;
 gdjs.How_32To_32PlayCode.GDBackgroundObjects2.length = 0;
 gdjs.How_32To_32PlayCode.GDHowTOObjects1.length = 0;

@@ -1,4 +1,6 @@
 gdjs.UpgradesCode = {};
+gdjs.UpgradesCode.GDTestValueObjects1= [];
+gdjs.UpgradesCode.GDTestValueObjects2= [];
 gdjs.UpgradesCode.GDBackgroundObjects1= [];
 gdjs.UpgradesCode.GDBackgroundObjects2= [];
 gdjs.UpgradesCode.GDBackObjects1= [];
@@ -9,14 +11,16 @@ gdjs.UpgradesCode.GDFireRateObjects1= [];
 gdjs.UpgradesCode.GDFireRateObjects2= [];
 gdjs.UpgradesCode.GDUpgradeObjects1= [];
 gdjs.UpgradesCode.GDUpgradeObjects2= [];
-gdjs.UpgradesCode.GDLazerDamageObjects1= [];
-gdjs.UpgradesCode.GDLazerDamageObjects2= [];
+gdjs.UpgradesCode.GDLaserDamageObjects1= [];
+gdjs.UpgradesCode.GDLaserDamageObjects2= [];
 gdjs.UpgradesCode.GDCoinMultiplierObjects1= [];
 gdjs.UpgradesCode.GDCoinMultiplierObjects2= [];
-gdjs.UpgradesCode.GDLazerSpeedObjects1= [];
-gdjs.UpgradesCode.GDLazerSpeedObjects2= [];
+gdjs.UpgradesCode.GDLaserSpeedObjects1= [];
+gdjs.UpgradesCode.GDLaserSpeedObjects2= [];
 gdjs.UpgradesCode.GDCostObjects1= [];
 gdjs.UpgradesCode.GDCostObjects2= [];
+gdjs.UpgradesCode.GDNewObjectObjects1= [];
+gdjs.UpgradesCode.GDNewObjectObjects2= [];
 
 gdjs.UpgradesCode.conditionTrue_0 = {val:false};
 gdjs.UpgradesCode.condition0IsTrue_0 = {val:false};
@@ -54,7 +58,7 @@ if (gdjs.UpgradesCode.condition2IsTrue_0.val) {
 }
 
 
-};gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLazerDamageObjects1Objects = Hashtable.newFrom({"LazerDamage": gdjs.UpgradesCode.GDLazerDamageObjects1});gdjs.UpgradesCode.eventsList1 = function(runtimeScene) {
+};gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLaserDamageObjects1Objects = Hashtable.newFrom({"LaserDamage": gdjs.UpgradesCode.GDLaserDamageObjects1});gdjs.UpgradesCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -66,17 +70,17 @@ gdjs.UpgradesCode.condition2IsTrue_0.val = false;
 gdjs.UpgradesCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 }if ( gdjs.UpgradesCode.condition0IsTrue_0.val ) {
 {
-gdjs.UpgradesCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("coin")) >= gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LazerDamageCost"));
+gdjs.UpgradesCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("coin")) >= gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LaserDamageCost"));
 }if ( gdjs.UpgradesCode.condition1IsTrue_0.val ) {
 {
-gdjs.UpgradesCode.condition2IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LazerDamageLevel")) <= 9;
+gdjs.UpgradesCode.condition2IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LaserDamageLevel")) <= 9;
 }}
 }
 if (gdjs.UpgradesCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().get("coin").sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LazerDamageCost")));
-}{runtimeScene.getGame().getVariables().get("LazerDamage").add(100);
-}{runtimeScene.getGame().getVariables().get("LazerDamageCost").mul(2);
-}{runtimeScene.getGame().getVariables().get("LazerDamageLevel").add(1);
+{runtimeScene.getGame().getVariables().get("coin").sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LaserDamageCost")));
+}{runtimeScene.getGame().getVariables().get("LaserDamage").add(100);
+}{runtimeScene.getGame().getVariables().get("LaserDamageCost").mul(2);
+}{runtimeScene.getGame().getVariables().get("LaserDamageLevel").add(1);
 }}
 
 }
@@ -110,7 +114,7 @@ if (gdjs.UpgradesCode.condition2IsTrue_0.val) {
 }
 
 
-};gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLazerSpeedObjects1Objects = Hashtable.newFrom({"LazerSpeed": gdjs.UpgradesCode.GDLazerSpeedObjects1});gdjs.UpgradesCode.eventsList3 = function(runtimeScene) {
+};gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLaserSpeedObjects1Objects = Hashtable.newFrom({"LaserSpeed": gdjs.UpgradesCode.GDLaserSpeedObjects1});gdjs.UpgradesCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -122,23 +126,23 @@ gdjs.UpgradesCode.condition2IsTrue_0.val = false;
 gdjs.UpgradesCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 }if ( gdjs.UpgradesCode.condition0IsTrue_0.val ) {
 {
-gdjs.UpgradesCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("coin")) >= gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LazerSpeedCost"));
+gdjs.UpgradesCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("coin")) >= gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LaserSpeedCost"));
 }if ( gdjs.UpgradesCode.condition1IsTrue_0.val ) {
 {
-gdjs.UpgradesCode.condition2IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LazerSpeedLevel")) <= 9;
+gdjs.UpgradesCode.condition2IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LaserSpeedLevel")) <= 9;
 }}
 }
 if (gdjs.UpgradesCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().get("coin").sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LazerSpeedCost")));
-}{runtimeScene.getGame().getVariables().get("LazerSpeed").add(50);
-}{runtimeScene.getGame().getVariables().get("LazerSpeedLevel").add(1);
-}{runtimeScene.getGame().getVariables().get("LazerSpeedCost").mul(3);
+{runtimeScene.getGame().getVariables().get("coin").sub(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("LaserSpeedCost")));
+}{runtimeScene.getGame().getVariables().get("LaserSpeed").add(50);
+}{runtimeScene.getGame().getVariables().get("LaserSpeedLevel").add(1);
+}{runtimeScene.getGame().getVariables().get("LaserSpeedCost").mul(3);
 }}
 
 }
 
 
-};gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDFireRateObjects1Objects = Hashtable.newFrom({"FireRate": gdjs.UpgradesCode.GDFireRateObjects1});gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDCoinMultiplierObjects1Objects = Hashtable.newFrom({"CoinMultiplier": gdjs.UpgradesCode.GDCoinMultiplierObjects1});gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLazerDamageObjects1Objects = Hashtable.newFrom({"LazerDamage": gdjs.UpgradesCode.GDLazerDamageObjects1});gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLazerSpeedObjects1Objects = Hashtable.newFrom({"LazerSpeed": gdjs.UpgradesCode.GDLazerSpeedObjects1});gdjs.UpgradesCode.eventsList4 = function(runtimeScene) {
+};gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDFireRateObjects1Objects = Hashtable.newFrom({"FireRate": gdjs.UpgradesCode.GDFireRateObjects1});gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDCoinMultiplierObjects1Objects = Hashtable.newFrom({"CoinMultiplier": gdjs.UpgradesCode.GDCoinMultiplierObjects1});gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLaserDamageObjects1Objects = Hashtable.newFrom({"LaserDamage": gdjs.UpgradesCode.GDLaserDamageObjects1});gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLaserSpeedObjects1Objects = Hashtable.newFrom({"LaserSpeed": gdjs.UpgradesCode.GDLaserSpeedObjects1});gdjs.UpgradesCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -180,8 +184,8 @@ if (gdjs.UpgradesCode.condition1IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Coin"), gdjs.UpgradesCode.GDCoinObjects1);
 gdjs.copyArray(runtimeScene.getObjects("CoinMultiplier"), gdjs.UpgradesCode.GDCoinMultiplierObjects1);
 gdjs.copyArray(runtimeScene.getObjects("FireRate"), gdjs.UpgradesCode.GDFireRateObjects1);
-gdjs.copyArray(runtimeScene.getObjects("LazerDamage"), gdjs.UpgradesCode.GDLazerDamageObjects1);
-gdjs.copyArray(runtimeScene.getObjects("LazerSpeed"), gdjs.UpgradesCode.GDLazerSpeedObjects1);
+gdjs.copyArray(runtimeScene.getObjects("LaserDamage"), gdjs.UpgradesCode.GDLaserDamageObjects1);
+gdjs.copyArray(runtimeScene.getObjects("LaserSpeed"), gdjs.UpgradesCode.GDLaserSpeedObjects1);
 {for(var i = 0, len = gdjs.UpgradesCode.GDCoinObjects1.length ;i < len;++i) {
     gdjs.UpgradesCode.GDCoinObjects1[i].setString("Coins: " + (gdjs.evtTools.common.toString(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("coin")))));
 }
@@ -191,11 +195,11 @@ gdjs.copyArray(runtimeScene.getObjects("LazerSpeed"), gdjs.UpgradesCode.GDLazerS
 }{for(var i = 0, len = gdjs.UpgradesCode.GDFireRateObjects1.length ;i < len;++i) {
     gdjs.UpgradesCode.GDFireRateObjects1[i].setString("Fire Rate: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("FireRateLevel")));
 }
-}{for(var i = 0, len = gdjs.UpgradesCode.GDLazerDamageObjects1.length ;i < len;++i) {
-    gdjs.UpgradesCode.GDLazerDamageObjects1[i].setString("Damage: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LazerDamageLevel")));
+}{for(var i = 0, len = gdjs.UpgradesCode.GDLaserDamageObjects1.length ;i < len;++i) {
+    gdjs.UpgradesCode.GDLaserDamageObjects1[i].setString("Damage: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LaserDamageLevel")));
 }
-}{for(var i = 0, len = gdjs.UpgradesCode.GDLazerSpeedObjects1.length ;i < len;++i) {
-    gdjs.UpgradesCode.GDLazerSpeedObjects1[i].setString("Lazer Speed: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LazerSpeedLevel")));
+}{for(var i = 0, len = gdjs.UpgradesCode.GDLaserSpeedObjects1.length ;i < len;++i) {
+    gdjs.UpgradesCode.GDLaserSpeedObjects1[i].setString("Laser Speed: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LaserSpeedLevel")));
 }
 }}
 
@@ -224,15 +228,15 @@ gdjs.UpgradesCode.eventsList0(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("LazerDamage"), gdjs.UpgradesCode.GDLazerDamageObjects1);
+gdjs.copyArray(runtimeScene.getObjects("LaserDamage"), gdjs.UpgradesCode.GDLaserDamageObjects1);
 
 gdjs.UpgradesCode.condition0IsTrue_0.val = false;
 {
-gdjs.UpgradesCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLazerDamageObjects1Objects, runtimeScene, true, false);
+gdjs.UpgradesCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLaserDamageObjects1Objects, runtimeScene, true, false);
 }if (gdjs.UpgradesCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Cost"), gdjs.UpgradesCode.GDCostObjects1);
 {for(var i = 0, len = gdjs.UpgradesCode.GDCostObjects1.length ;i < len;++i) {
-    gdjs.UpgradesCode.GDCostObjects1[i].setString("Cost: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LazerDamageCost")));
+    gdjs.UpgradesCode.GDCostObjects1[i].setString("Cost: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LaserDamageCost")));
 }
 }
 { //Subevents
@@ -264,15 +268,15 @@ gdjs.UpgradesCode.eventsList2(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("LazerSpeed"), gdjs.UpgradesCode.GDLazerSpeedObjects1);
+gdjs.copyArray(runtimeScene.getObjects("LaserSpeed"), gdjs.UpgradesCode.GDLaserSpeedObjects1);
 
 gdjs.UpgradesCode.condition0IsTrue_0.val = false;
 {
-gdjs.UpgradesCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLazerSpeedObjects1Objects, runtimeScene, true, false);
+gdjs.UpgradesCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLaserSpeedObjects1Objects, runtimeScene, true, false);
 }if (gdjs.UpgradesCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Cost"), gdjs.UpgradesCode.GDCostObjects1);
 {for(var i = 0, len = gdjs.UpgradesCode.GDCostObjects1.length ;i < len;++i) {
-    gdjs.UpgradesCode.GDCostObjects1[i].setString("Cost: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LazerSpeedCost")));
+    gdjs.UpgradesCode.GDCostObjects1[i].setString("Cost: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LaserSpeedCost")));
 }
 }
 { //Subevents
@@ -286,8 +290,8 @@ gdjs.UpgradesCode.eventsList3(runtimeScene);} //End of subevents
 
 gdjs.copyArray(runtimeScene.getObjects("CoinMultiplier"), gdjs.UpgradesCode.GDCoinMultiplierObjects1);
 gdjs.copyArray(runtimeScene.getObjects("FireRate"), gdjs.UpgradesCode.GDFireRateObjects1);
-gdjs.copyArray(runtimeScene.getObjects("LazerDamage"), gdjs.UpgradesCode.GDLazerDamageObjects1);
-gdjs.copyArray(runtimeScene.getObjects("LazerSpeed"), gdjs.UpgradesCode.GDLazerSpeedObjects1);
+gdjs.copyArray(runtimeScene.getObjects("LaserDamage"), gdjs.UpgradesCode.GDLaserDamageObjects1);
+gdjs.copyArray(runtimeScene.getObjects("LaserSpeed"), gdjs.UpgradesCode.GDLaserSpeedObjects1);
 
 gdjs.UpgradesCode.condition0IsTrue_0.val = false;
 gdjs.UpgradesCode.condition1IsTrue_0.val = false;
@@ -300,10 +304,10 @@ gdjs.UpgradesCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gd
 gdjs.UpgradesCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDCoinMultiplierObjects1Objects, runtimeScene, true, true);
 }if ( gdjs.UpgradesCode.condition1IsTrue_0.val ) {
 {
-gdjs.UpgradesCode.condition2IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLazerDamageObjects1Objects, runtimeScene, true, true);
+gdjs.UpgradesCode.condition2IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLaserDamageObjects1Objects, runtimeScene, true, true);
 }if ( gdjs.UpgradesCode.condition2IsTrue_0.val ) {
 {
-gdjs.UpgradesCode.condition3IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLazerSpeedObjects1Objects, runtimeScene, true, true);
+gdjs.UpgradesCode.condition3IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDLaserSpeedObjects1Objects, runtimeScene, true, true);
 }}
 }
 }
@@ -331,6 +335,8 @@ gdjs.copyArray(runtimeScene.getObjects("Cost"), gdjs.UpgradesCode.GDCostObjects1
 gdjs.UpgradesCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.UpgradesCode.GDTestValueObjects1.length = 0;
+gdjs.UpgradesCode.GDTestValueObjects2.length = 0;
 gdjs.UpgradesCode.GDBackgroundObjects1.length = 0;
 gdjs.UpgradesCode.GDBackgroundObjects2.length = 0;
 gdjs.UpgradesCode.GDBackObjects1.length = 0;
@@ -341,14 +347,16 @@ gdjs.UpgradesCode.GDFireRateObjects1.length = 0;
 gdjs.UpgradesCode.GDFireRateObjects2.length = 0;
 gdjs.UpgradesCode.GDUpgradeObjects1.length = 0;
 gdjs.UpgradesCode.GDUpgradeObjects2.length = 0;
-gdjs.UpgradesCode.GDLazerDamageObjects1.length = 0;
-gdjs.UpgradesCode.GDLazerDamageObjects2.length = 0;
+gdjs.UpgradesCode.GDLaserDamageObjects1.length = 0;
+gdjs.UpgradesCode.GDLaserDamageObjects2.length = 0;
 gdjs.UpgradesCode.GDCoinMultiplierObjects1.length = 0;
 gdjs.UpgradesCode.GDCoinMultiplierObjects2.length = 0;
-gdjs.UpgradesCode.GDLazerSpeedObjects1.length = 0;
-gdjs.UpgradesCode.GDLazerSpeedObjects2.length = 0;
+gdjs.UpgradesCode.GDLaserSpeedObjects1.length = 0;
+gdjs.UpgradesCode.GDLaserSpeedObjects2.length = 0;
 gdjs.UpgradesCode.GDCostObjects1.length = 0;
 gdjs.UpgradesCode.GDCostObjects2.length = 0;
+gdjs.UpgradesCode.GDNewObjectObjects1.length = 0;
+gdjs.UpgradesCode.GDNewObjectObjects2.length = 0;
 
 gdjs.UpgradesCode.eventsList4(runtimeScene);
 return;

@@ -1,4 +1,6 @@
 gdjs.Start_32PageCode = {};
+gdjs.Start_32PageCode.GDTestValueObjects1= [];
+gdjs.Start_32PageCode.GDTestValueObjects2= [];
 gdjs.Start_32PageCode.GDBackgroundObjects1= [];
 gdjs.Start_32PageCode.GDBackgroundObjects2= [];
 gdjs.Start_32PageCode.GDHelpObjects1= [];
@@ -7,6 +9,8 @@ gdjs.Start_32PageCode.GDStart_95GameObjects1= [];
 gdjs.Start_32PageCode.GDStart_95GameObjects2= [];
 gdjs.Start_32PageCode.GDDevToolsObjects1= [];
 gdjs.Start_32PageCode.GDDevToolsObjects2= [];
+gdjs.Start_32PageCode.GDTitleObjects1= [];
+gdjs.Start_32PageCode.GDTitleObjects2= [];
 
 gdjs.Start_32PageCode.conditionTrue_0 = {val:false};
 gdjs.Start_32PageCode.condition0IsTrue_0 = {val:false};
@@ -94,6 +98,8 @@ if (gdjs.Start_32PageCode.condition1IsTrue_0.val) {
 gdjs.Start_32PageCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.Start_32PageCode.GDTestValueObjects1.length = 0;
+gdjs.Start_32PageCode.GDTestValueObjects2.length = 0;
 gdjs.Start_32PageCode.GDBackgroundObjects1.length = 0;
 gdjs.Start_32PageCode.GDBackgroundObjects2.length = 0;
 gdjs.Start_32PageCode.GDHelpObjects1.length = 0;
@@ -102,6 +108,8 @@ gdjs.Start_32PageCode.GDStart_95GameObjects1.length = 0;
 gdjs.Start_32PageCode.GDStart_95GameObjects2.length = 0;
 gdjs.Start_32PageCode.GDDevToolsObjects1.length = 0;
 gdjs.Start_32PageCode.GDDevToolsObjects2.length = 0;
+gdjs.Start_32PageCode.GDTitleObjects1.length = 0;
+gdjs.Start_32PageCode.GDTitleObjects2.length = 0;
 
 gdjs.Start_32PageCode.eventsList0(runtimeScene);
 return;

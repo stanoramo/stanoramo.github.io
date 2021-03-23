@@ -1,4 +1,6 @@
 gdjs.PauseCode = {};
+gdjs.PauseCode.GDTestValueObjects1= [];
+gdjs.PauseCode.GDTestValueObjects2= [];
 gdjs.PauseCode.GDBackgroundObjects1= [];
 gdjs.PauseCode.GDBackgroundObjects2= [];
 gdjs.PauseCode.GDDevToolsObjects1= [];
@@ -57,6 +59,8 @@ if (gdjs.PauseCode.condition1IsTrue_0.val) {
 gdjs.PauseCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.PauseCode.GDTestValueObjects1.length = 0;
+gdjs.PauseCode.GDTestValueObjects2.length = 0;
 gdjs.PauseCode.GDBackgroundObjects1.length = 0;
 gdjs.PauseCode.GDBackgroundObjects2.length = 0;
 gdjs.PauseCode.GDDevToolsObjects1.length = 0;
