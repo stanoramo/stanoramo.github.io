@@ -191,6 +191,7 @@ gdjs.copyArray(runtimeScene.getObjects("TestValue"), gdjs.Endless_32RunnerCode.G
     gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].hide();
 }
 }{runtimeScene.getVariables().get("Flag").setNumber(1);
+}{gdjs.evtTools.sound.playMusic(runtimeScene, "yt1s.com - Space Harrier Music  MAIN THEME.mp3", true, 60, 1);
 }}
 
 }
@@ -217,7 +218,7 @@ gdjs.Endless_32RunnerCode.GDBackgroundObjects1.length = k;}}
 if (gdjs.Endless_32RunnerCode.condition1IsTrue_0.val) {
 /* Reuse gdjs.Endless_32RunnerCode.GDBackgroundObjects1 */
 {for(var i = 0, len = gdjs.Endless_32RunnerCode.GDBackgroundObjects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDBackgroundObjects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDBackgroundObjects1[i].getVariables().get("Speed")).add(10);
+    gdjs.Endless_32RunnerCode.GDBackgroundObjects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDBackgroundObjects1[i].getVariables().get("Speed")).add(20);
 }
 }{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDBackgroundObjects1.length ;i < len;++i) {
     gdjs.Endless_32RunnerCode.GDBackgroundObjects1[i].returnVariable(gdjs.Endless_32RunnerCode.GDBackgroundObjects1[i].getVariables().get("SpawnSpeed")).sub(0.01);
@@ -445,7 +446,7 @@ for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor6Objects1.length ;i < len
 gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
 gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = false;
 {
-gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 10, "IncreaseHealth");
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 5, "IncreaseHealth");
 }if ( gdjs.Endless_32RunnerCode.condition0IsTrue_0.val ) {
 {
 gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("LaserDamage")) > 120;
@@ -736,7 +737,7 @@ gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPres
 }if ( gdjs.Endless_32RunnerCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Endless_32RunnerCode.conditionTrue_1 = gdjs.Endless_32RunnerCode.condition1IsTrue_0;
-gdjs.Endless_32RunnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9676060);
+gdjs.Endless_32RunnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9676108);
 }
 }}
 if (gdjs.Endless_32RunnerCode.condition1IsTrue_0.val) {
@@ -758,7 +759,7 @@ gdjs.copyArray(runtimeScene.getObjects("TestValue"), gdjs.Endless_32RunnerCode.G
     gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].hide(false);
 }
 }{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDTestValueObjects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].setString("FireRate: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("FireRate")) + " LaserSpeed: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LaserSpeed")) + " LaserDamage: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LaserDamage")) + " CoinMultiplier: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("CoinMultiplier")) + " Invincible: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("Invincible")) + " InfMoney: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("InfMoney")));
+    gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].setString("FireRate: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("FireRate")) + " LaserSpeed: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LaserSpeed")) + " LaserDamage: " + gdjs.evtTools.common.getVariableString(runtimeScene.getVariables().get("LaserDamage")) + " CoinMultiplier: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("CoinMultiplier")) + " Invincible: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("Invincible")) + " InfMoney: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("InfMoney")));
 }
 }}
 
