@@ -18,6 +18,10 @@ gdjs.Game_32OverCode.conditionTrue_0 = {val:false};
 gdjs.Game_32OverCode.condition0IsTrue_0 = {val:false};
 gdjs.Game_32OverCode.condition1IsTrue_0 = {val:false};
 gdjs.Game_32OverCode.condition2IsTrue_0 = {val:false};
+gdjs.Game_32OverCode.conditionTrue_1 = {val:false};
+gdjs.Game_32OverCode.condition0IsTrue_1 = {val:false};
+gdjs.Game_32OverCode.condition1IsTrue_1 = {val:false};
+gdjs.Game_32OverCode.condition2IsTrue_1 = {val:false};
 
 
 gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDTryAgainObjects1Objects = Hashtable.newFrom({"TryAgain": gdjs.Game_32OverCode.GDTryAgainObjects1});gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDUpgradeObjects1Objects = Hashtable.newFrom({"Upgrade": gdjs.Game_32OverCode.GDUpgradeObjects1});gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDDevToolsObjects1Objects = Hashtable.newFrom({"DevTools": gdjs.Game_32OverCode.GDDevToolsObjects1});gdjs.Game_32OverCode.eventsList0 = function(runtimeScene) {
@@ -108,6 +112,61 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.Game_32OverCode.GDScoreObj
     gdjs.Game_32OverCode.GDScoreObjects1[i].setString("New High Score:\n " + (gdjs.evtTools.common.toString(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Score")))));
 }
 }}
+
+}
+
+
+{
+
+
+gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
+gdjs.Game_32OverCode.condition1IsTrue_0.val = false;
+{
+gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "m");
+}if ( gdjs.Game_32OverCode.condition0IsTrue_0.val ) {
+{
+{gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition1IsTrue_0;
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9662628);
+}
+}}
+if (gdjs.Game_32OverCode.condition1IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().get("Sound").mul(-(1));
+}}
+
+}
+
+
+{
+
+
+gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
+{
+gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Sound")) == 1;
+}if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.sound.setGlobalVolume(runtimeScene, 60);
+}}
+
+}
+
+
+{
+
+
+gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
+{
+gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Sound")) == -(1);
+}if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.sound.setGlobalVolume(runtimeScene, 0);
+}}
+
+}
+
+
+{
+
+
+{
+}
 
 }
 

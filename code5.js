@@ -191,7 +191,7 @@ gdjs.copyArray(runtimeScene.getObjects("TestValue"), gdjs.Endless_32RunnerCode.G
     gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].hide();
 }
 }{runtimeScene.getVariables().get("Flag").setNumber(1);
-}{gdjs.evtTools.sound.playMusic(runtimeScene, "yt1s.com - Space Harrier Music  MAIN THEME.mp3", true, 60, 1);
+}{runtimeScene.getVariables().get("SpriteCount").setNumber(1);
 }}
 
 }
@@ -319,7 +319,7 @@ gdjs.copyArray(runtimeScene.getObjects("Rocket"), gdjs.Endless_32RunnerCode.GDRo
 gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
 gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = false;
 {
-gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Invincible")) == 0;
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Invincible")) == -(1);
 }if ( gdjs.Endless_32RunnerCode.condition0IsTrue_0.val ) {
 {
 gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDMeteor1Objects1ObjectsGDgdjs_46Endless_9532RunnerCode_46GDMeteor2Objects1ObjectsGDgdjs_46Endless_9532RunnerCode_46GDMeteor3Objects1ObjectsGDgdjs_46Endless_9532RunnerCode_46GDMeteor4Objects1ObjectsGDgdjs_46Endless_9532RunnerCode_46GDMeteor5Objects1ObjectsGDgdjs_46Endless_9532RunnerCode_46GDMeteor6Objects1Objects, gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDRocketObjects1Objects, false, runtimeScene, false);
@@ -364,6 +364,7 @@ gdjs.Endless_32RunnerCode.GDMeteor6Objects1.length = 0;
 {runtimeScene.getVariables().get("met").setNumber((gdjs.random(6)));
 }{gdjs.evtTools.object.createObjectFromGroupOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDMeteor1Objects1ObjectsGDgdjs_46Endless_9532RunnerCode_46GDMeteor2Objects1ObjectsGDgdjs_46Endless_9532RunnerCode_46GDMeteor3Objects1ObjectsGDgdjs_46Endless_9532RunnerCode_46GDMeteor4Objects1ObjectsGDgdjs_46Endless_9532RunnerCode_46GDMeteor5Objects1ObjectsGDgdjs_46Endless_9532RunnerCode_46GDMeteor6Objects1Objects, "Meteor" + gdjs.evtTools.common.getVariableString(runtimeScene.getVariables().get("met")), gdjs.random(800), -(10), "1");
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "Enemy");
+}{runtimeScene.getVariables().get("SpriteCount").add(1);
 }}
 
 }
@@ -489,7 +490,8 @@ for(var i = 0, len = gdjs.Endless_32RunnerCode.GDCrystal3Objects1.length ;i < le
 for(var i = 0, len = gdjs.Endless_32RunnerCode.GDCrystal2Objects1.length ;i < len;++i) {
     gdjs.Endless_32RunnerCode.GDCrystal2Objects1[i].deleteFromScene(runtimeScene);
 }
-}{gdjs.evtTools.sound.playSound(runtimeScene, "coin.wav", false, 5, 1);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "coin.wav", false, 60, 1);
+}{runtimeScene.getVariables().get("SpriteCount").sub(1);
 }
 { //Subevents
 gdjs.Endless_32RunnerCode.eventsList3(runtimeScene);} //End of subevents
@@ -515,6 +517,7 @@ gdjs.Endless_32RunnerCode.GDCrystal3Objects1.length = 0;
 {runtimeScene.getVariables().get("gem").setNumber((gdjs.random(3)));
 }{gdjs.evtTools.object.createObjectFromGroupOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDCrystal1Objects1ObjectsGDgdjs_46Endless_9532RunnerCode_46GDCrystal3Objects1ObjectsGDgdjs_46Endless_9532RunnerCode_46GDCrystal2Objects1Objects, "Crystal" + gdjs.evtTools.common.getVariableString(runtimeScene.getVariables().get("gem")), gdjs.random(800), -(10), "1");
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "Coin");
+}{runtimeScene.getVariables().get("SpriteCount").add(1);
 }}
 
 }
@@ -570,7 +573,7 @@ gdjs.copyArray(runtimeScene.getObjects("Rocket"), gdjs.Endless_32RunnerCode.GDRo
 gdjs.Endless_32RunnerCode.GDBlueLaserObjects1.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Endless_32RunnerCode.mapOfGDgdjs_46Endless_9532RunnerCode_46GDBlueLaserObjects1Objects, (( gdjs.Endless_32RunnerCode.GDRocketObjects1.length === 0 ) ? 0 :gdjs.Endless_32RunnerCode.GDRocketObjects1[0].getPointX("Gun")), (( gdjs.Endless_32RunnerCode.GDRocketObjects1.length === 0 ) ? 0 :gdjs.Endless_32RunnerCode.GDRocketObjects1[0].getPointY("Gun")), "");
-}{gdjs.evtTools.sound.playSound(runtimeScene, "Laser sound.wav", false, 5, 1);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Laser sound.wav", false, 60, 1);
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "FireRate");
 }}
 
@@ -715,6 +718,7 @@ for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor5Objects1.length ;i < len
 for(var i = 0, len = gdjs.Endless_32RunnerCode.GDMeteor6Objects1.length ;i < len;++i) {
     gdjs.Endless_32RunnerCode.GDMeteor6Objects1[i].deleteFromScene(runtimeScene);
 }
+}{runtimeScene.getVariables().get("SpriteCount").sub(1);
 }}
 
 }
@@ -737,7 +741,7 @@ gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPres
 }if ( gdjs.Endless_32RunnerCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Endless_32RunnerCode.conditionTrue_1 = gdjs.Endless_32RunnerCode.condition1IsTrue_0;
-gdjs.Endless_32RunnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9676108);
+gdjs.Endless_32RunnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9745660);
 }
 }}
 if (gdjs.Endless_32RunnerCode.condition1IsTrue_0.val) {
@@ -759,7 +763,7 @@ gdjs.copyArray(runtimeScene.getObjects("TestValue"), gdjs.Endless_32RunnerCode.G
     gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].hide(false);
 }
 }{for(var i = 0, len = gdjs.Endless_32RunnerCode.GDTestValueObjects1.length ;i < len;++i) {
-    gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].setString("FireRate: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("FireRate")) + " LaserSpeed: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LaserSpeed")) + " LaserDamage: " + gdjs.evtTools.common.getVariableString(runtimeScene.getVariables().get("LaserDamage")) + " CoinMultiplier: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("CoinMultiplier")) + " Invincible: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("Invincible")) + " InfMoney: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("InfMoney")));
+    gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].setString("FireRate: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("FireRate")) + " LaserSpeed: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("LaserSpeed")) + " LaserDamage: " + gdjs.evtTools.common.getVariableString(runtimeScene.getVariables().get("LaserDamage")) + " CoinMultiplier: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("CoinMultiplier")) + " Invincible: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("Invincible")) + " InfMoney: " + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("InfMoney")) + "Sprite Count: " + gdjs.evtTools.common.getVariableString(runtimeScene.getVariables().get("SpriteCount")));
 }
 }}
 
@@ -778,6 +782,81 @@ gdjs.copyArray(runtimeScene.getObjects("TestValue"), gdjs.Endless_32RunnerCode.G
     gdjs.Endless_32RunnerCode.GDTestValueObjects1[i].hide();
 }
 }}
+
+}
+
+
+{
+
+
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
+gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = false;
+{
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "m");
+}if ( gdjs.Endless_32RunnerCode.condition0IsTrue_0.val ) {
+{
+{gdjs.Endless_32RunnerCode.conditionTrue_1 = gdjs.Endless_32RunnerCode.condition1IsTrue_0;
+gdjs.Endless_32RunnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7950548);
+}
+}}
+if (gdjs.Endless_32RunnerCode.condition1IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().get("Sound").mul(-(1));
+}}
+
+}
+
+
+{
+
+
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
+{
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Sound")) == 1;
+}if (gdjs.Endless_32RunnerCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.sound.setGlobalVolume(runtimeScene, 60);
+}}
+
+}
+
+
+{
+
+
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
+{
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Sound")) == -(1);
+}if (gdjs.Endless_32RunnerCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.sound.setGlobalVolume(runtimeScene, 0);
+}}
+
+}
+
+
+{
+
+
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = false;
+gdjs.Endless_32RunnerCode.condition1IsTrue_0.val = false;
+{
+gdjs.Endless_32RunnerCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "i");
+}if ( gdjs.Endless_32RunnerCode.condition0IsTrue_0.val ) {
+{
+{gdjs.Endless_32RunnerCode.conditionTrue_1 = gdjs.Endless_32RunnerCode.condition1IsTrue_0;
+gdjs.Endless_32RunnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7403660);
+}
+}}
+if (gdjs.Endless_32RunnerCode.condition1IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().get("Invincible").mul(-(1));
+}}
+
+}
+
+
+{
+
+
+{
+}
 
 }
 

@@ -18,6 +18,10 @@ gdjs.Developer_32ToolsCode.conditionTrue_0 = {val:false};
 gdjs.Developer_32ToolsCode.condition0IsTrue_0 = {val:false};
 gdjs.Developer_32ToolsCode.condition1IsTrue_0 = {val:false};
 gdjs.Developer_32ToolsCode.condition2IsTrue_0 = {val:false};
+gdjs.Developer_32ToolsCode.conditionTrue_1 = {val:false};
+gdjs.Developer_32ToolsCode.condition0IsTrue_1 = {val:false};
+gdjs.Developer_32ToolsCode.condition1IsTrue_1 = {val:false};
+gdjs.Developer_32ToolsCode.condition2IsTrue_1 = {val:false};
 
 
 gdjs.Developer_32ToolsCode.mapOfGDgdjs_46Developer_9532ToolsCode_46GDBackObjects1Objects = Hashtable.newFrom({"Back": gdjs.Developer_32ToolsCode.GDBackObjects1});gdjs.Developer_32ToolsCode.eventsList0 = function(runtimeScene) {
@@ -136,7 +140,7 @@ for(var i = 0, k = 0, l = gdjs.Developer_32ToolsCode.GDCheckBox2Objects1.length;
 }
 gdjs.Developer_32ToolsCode.GDCheckBox2Objects1.length = k;}if ( gdjs.Developer_32ToolsCode.condition0IsTrue_0.val ) {
 {
-gdjs.Developer_32ToolsCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Invincible")) == 0;
+gdjs.Developer_32ToolsCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Invincible")) == -(1);
 }}
 if (gdjs.Developer_32ToolsCode.condition1IsTrue_0.val) {
 /* Reuse gdjs.Developer_32ToolsCode.GDCheckBox2Objects1 */
@@ -169,7 +173,7 @@ gdjs.Developer_32ToolsCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVari
 }}
 if (gdjs.Developer_32ToolsCode.condition1IsTrue_0.val) {
 /* Reuse gdjs.Developer_32ToolsCode.GDCheckBox2Objects1 */
-{runtimeScene.getGame().getVariables().get("Invincible").setNumber(0);
+{runtimeScene.getGame().getVariables().get("Invincible").setNumber(-(1));
 }{for(var i = 0, len = gdjs.Developer_32ToolsCode.GDCheckBox2Objects1.length ;i < len;++i) {
     gdjs.Developer_32ToolsCode.GDCheckBox2Objects1[i].getBehavior("Checkbox").SetChecked(false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
@@ -193,6 +197,61 @@ gdjs.Developer_32ToolsCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOn
 if (gdjs.Developer_32ToolsCode.condition1IsTrue_0.val) {
 {gdjs.evtTools.runtimeScene.popScene(runtimeScene);
 }}
+
+}
+
+
+{
+
+
+gdjs.Developer_32ToolsCode.condition0IsTrue_0.val = false;
+gdjs.Developer_32ToolsCode.condition1IsTrue_0.val = false;
+{
+gdjs.Developer_32ToolsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "m");
+}if ( gdjs.Developer_32ToolsCode.condition0IsTrue_0.val ) {
+{
+{gdjs.Developer_32ToolsCode.conditionTrue_1 = gdjs.Developer_32ToolsCode.condition1IsTrue_0;
+gdjs.Developer_32ToolsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10200844);
+}
+}}
+if (gdjs.Developer_32ToolsCode.condition1IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().get("Sound").mul(-(1));
+}}
+
+}
+
+
+{
+
+
+gdjs.Developer_32ToolsCode.condition0IsTrue_0.val = false;
+{
+gdjs.Developer_32ToolsCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Sound")) == 1;
+}if (gdjs.Developer_32ToolsCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.sound.setGlobalVolume(runtimeScene, 60);
+}}
+
+}
+
+
+{
+
+
+gdjs.Developer_32ToolsCode.condition0IsTrue_0.val = false;
+{
+gdjs.Developer_32ToolsCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Sound")) == -(1);
+}if (gdjs.Developer_32ToolsCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.sound.setGlobalVolume(runtimeScene, 0);
+}}
+
+}
+
+
+{
+
+
+{
+}
 
 }
 

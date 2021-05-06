@@ -353,7 +353,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Checkbo
 gdjs.evtsExt__Checkbox__Checkbox.Checkbox.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
 {
 {gdjs.evtsExt__Checkbox__Checkbox.Checkbox.prototype.doStepPostEventsContext.conditionTrue_1 = gdjs.evtsExt__Checkbox__Checkbox.Checkbox.prototype.doStepPostEventsContext.condition0IsTrue_0;
-gdjs.evtsExt__Checkbox__Checkbox.Checkbox.prototype.doStepPostEventsContext.conditionTrue_1.val = eventsFunctionContext.getOnceTriggers().triggerOnce(9726708);
+gdjs.evtsExt__Checkbox__Checkbox.Checkbox.prototype.doStepPostEventsContext.conditionTrue_1.val = eventsFunctionContext.getOnceTriggers().triggerOnce(9797076);
 }
 }if (gdjs.evtsExt__Checkbox__Checkbox.Checkbox.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
 /* Reuse gdjs.evtsExt__Checkbox__Checkbox.Checkbox.prototype.doStepPostEventsContext.GDObjectObjects3 */
@@ -675,10 +675,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -779,10 +783,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -882,10 +890,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1020,10 +1032,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1095,10 +1111,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1171,10 +1191,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1247,10 +1271,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1323,10 +1351,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1399,10 +1431,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1475,10 +1511,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1551,10 +1591,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1627,10 +1671,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1729,10 +1777,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1830,10 +1882,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1902,10 +1958,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -1974,10 +2034,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -2046,10 +2110,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -2118,10 +2186,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -2190,10 +2262,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -2262,10 +2338,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {
@@ -2337,10 +2417,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     var objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      return parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
-    }
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
     return null;
   },
   getLayer: function(layerName) {

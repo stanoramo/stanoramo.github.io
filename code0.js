@@ -43,10 +43,11 @@ gdjs.Initialisation_32PageCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeSce
 }{runtimeScene.getGame().getVariables().get("LaserSpeed").setNumber(100);
 }{runtimeScene.getGame().getVariables().get("LaserSpeedCost").setNumber(10000);
 }{runtimeScene.getGame().getVariables().get("LaserSpeedLevel").setNumber(1);
-}{runtimeScene.getGame().getVariables().get("Invincible").setNumber(0);
+}{runtimeScene.getGame().getVariables().get("Invincible").setNumber(-(1));
 }{runtimeScene.getGame().getVariables().get("InfMoney").setNumber(0);
 }{runtimeScene.getGame().getVariables().get("God").setNumber(0);
 }{runtimeScene.getGame().getVariables().get("HighScore").setNumber(0);
+}{runtimeScene.getGame().getVariables().get("Sound").setNumber(1);
 }}
 
 }

@@ -28,6 +28,12 @@ gdjs.UpgradesCode.condition1IsTrue_0 = {val:false};
 gdjs.UpgradesCode.condition2IsTrue_0 = {val:false};
 gdjs.UpgradesCode.condition3IsTrue_0 = {val:false};
 gdjs.UpgradesCode.condition4IsTrue_0 = {val:false};
+gdjs.UpgradesCode.conditionTrue_1 = {val:false};
+gdjs.UpgradesCode.condition0IsTrue_1 = {val:false};
+gdjs.UpgradesCode.condition1IsTrue_1 = {val:false};
+gdjs.UpgradesCode.condition2IsTrue_1 = {val:false};
+gdjs.UpgradesCode.condition3IsTrue_1 = {val:false};
+gdjs.UpgradesCode.condition4IsTrue_1 = {val:false};
 
 
 gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDBackObjects1Objects = Hashtable.newFrom({"Back": gdjs.UpgradesCode.GDBackObjects1});gdjs.UpgradesCode.mapOfGDgdjs_46UpgradesCode_46GDFireRateObjects1Objects = Hashtable.newFrom({"FireRate": gdjs.UpgradesCode.GDFireRateObjects1});gdjs.UpgradesCode.eventsList0 = function(runtimeScene) {
@@ -316,6 +322,52 @@ gdjs.copyArray(runtimeScene.getObjects("Cost"), gdjs.UpgradesCode.GDCostObjects1
 {for(var i = 0, len = gdjs.UpgradesCode.GDCostObjects1.length ;i < len;++i) {
     gdjs.UpgradesCode.GDCostObjects1[i].setString("Cost: 0");
 }
+}}
+
+}
+
+
+{
+
+
+gdjs.UpgradesCode.condition0IsTrue_0.val = false;
+gdjs.UpgradesCode.condition1IsTrue_0.val = false;
+{
+gdjs.UpgradesCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "m");
+}if ( gdjs.UpgradesCode.condition0IsTrue_0.val ) {
+{
+{gdjs.UpgradesCode.conditionTrue_1 = gdjs.UpgradesCode.condition1IsTrue_0;
+gdjs.UpgradesCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9313116);
+}
+}}
+if (gdjs.UpgradesCode.condition1IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().get("Sound").mul(-(1));
+}}
+
+}
+
+
+{
+
+
+gdjs.UpgradesCode.condition0IsTrue_0.val = false;
+{
+gdjs.UpgradesCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Sound")) == 1;
+}if (gdjs.UpgradesCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.sound.setGlobalVolume(runtimeScene, 60);
+}}
+
+}
+
+
+{
+
+
+gdjs.UpgradesCode.condition0IsTrue_0.val = false;
+{
+gdjs.UpgradesCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("Sound")) == -(1);
+}if (gdjs.UpgradesCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.sound.setGlobalVolume(runtimeScene, 0);
 }}
 
 }
